@@ -1,0 +1,43 @@
+{
+  "name": "ts-performance-check",
+  "version": "0.1.0",
+  "description": "Performance checks for TypeScript and JavaScript projects without AI, and route latency and event-loop delay for Node services.",
+  "type": "module",
+  "bin": {
+    "ts-performance-check": "bin/ts-performance-check.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "typescript": "~5.9.3"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "static-analysis",
+    "performance",
+    "event-loop",
+    "ci"
+  ],
+  "author": "Olgun Özoktaş <olgunozoktas@hotmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olgunozoktas/ts-performance-check.git"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./perfwatch": "./src/perfwatch.js"
+  }
+}
